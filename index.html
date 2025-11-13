@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeQuest: JS Trivia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>⚡ CodeQuest: JavaScript Trivia</h1>
+      <div class="bar">
+        <div class="fill" id="bar-fill"></div>
+      </div>
+      <p class="status">Question <span id="current">1</span> of <span id="total">5</span></p>
+    </header>
+
+    <section id="quiz">
+      <h2 id="question-text">Loading...</h2>
+      <div id="choices"></div>
+      <div id="timer-box">
+        <p>⏱ Time left: <span id="time">20</span>s</p>
+        <div class="time-bar"><div id="time-fill"></div></div>
+      </div>
+      <button id="next" onclick="nextQ()">Next ▶</button>
+    </section>
+
+    <section id="result">
+      <div class="circle">
+        <span id="points">0</span> / <span id="total-q">0</span>
+      </div>
+      <h2 id="msg">You finished!</h2>
+      <p id="remark"></p>
+      <button id="try-again-btn" onclick="restartGame()">Try Again</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>Made by Joseph ✨ | JS Lab Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
